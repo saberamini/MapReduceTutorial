@@ -74,6 +74,9 @@ In Java, the most commonly used is the Eclipse IDE.  We would like to download t
 
 There are many choices here - it seems confusing but in reality it is just a an alphabetical list.  The latest version is Photon, so click on Photon and then choose 
 
+<img src="EclipseDownload.jpg" alt="Choosing the latest version of Eclipse">
+
+
 Interestingly, all the different names have confused people which reminds of the paradox of choice.
 
 
