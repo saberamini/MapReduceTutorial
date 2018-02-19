@@ -67,3 +67,14 @@ public class WordCount {
   }
 }
 ```
+
+Now we need to compile this could and at a minimum we require a compiler.  But given the complexity of this code, we need more support and will use a Integrated Development Environment or IDE
+
+In Java, the most commonly used is the Eclipse IDE.  We would like to download the IDE, go to 
+
+There are many choices here - it seems confusing but in reality it is just a an alphabetical list.  The latest version is Photon, so click on Photon and then choose 
+
+Interestingly, all the different names have confused people which reminds of the paradox of choice.
+
+
+
