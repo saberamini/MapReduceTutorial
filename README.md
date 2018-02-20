@@ -79,5 +79,17 @@ There are many choices here - it seems confusing but in reality it is just a an 
 
 Interestingly, all the different names have confused people which reminds of the paradox of choice.
 
+Open Eclipse
+
+Choose a project directory (can be the default chosen for you)
+
+In the next window choose File --> New Project
+
+Choose Java Project, and call the projectd WordCount
+
+<img src="NewJavaProject.jpg" alt="New Java Project in Eclipse">
+
+
+
 
 
