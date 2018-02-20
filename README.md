@@ -94,5 +94,13 @@ We now need to add the hadoop libraries.
 
 <img src="AddingHadoopLibraries.jpg" alt="Adding Hadoop Libraries" width = "400" align="middle">
 
+YOu should have already downloaded Hadoop 2.9 version for installing the Hadoop cluster on a single node.  The files were untarred (equivalent to unzipped) in the following folder on your virtual machine
+
+```
+/usr/local/hadoop/share/common
+```
+
+But since we are installing Eclipse on the windows platform, we cannot "see" these files
+
 
 
