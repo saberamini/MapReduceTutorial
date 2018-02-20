@@ -88,7 +88,7 @@ Choose Java Project, and call the project WordCount
 
 <img src="NewJavaProject.jpg" alt="New Java Project in Eclipse" width="400" align="middle">
 
-Click Next
+Click Next.
 
 We now need to add the hadoop libraries.
 
@@ -102,5 +102,5 @@ YOu should have already downloaded Hadoop 2.9 version for installing the Hadoop 
 
 But since we are installing Eclipse on the windows platform, we cannot "see" these files
 
-
+We will first create a shared folder in your virtual machine.
 
