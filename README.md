@@ -120,6 +120,8 @@ In the Project development environment, right click on src --> New --> Class
 
 <img src="NewJavaProject3.jpg" alt="New Java Project in Eclipse" width="400" align="middle">
 
+Call the new class "WordCount" and click finish
 
+<img src="NewJavaProject4.jpg" alt="New Java Project in Eclipse" width="400" align="middle">
 
 
