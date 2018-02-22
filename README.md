@@ -84,7 +84,7 @@ Choose a project directory (can be the default chosen for you)
 
 In the next window choose File --> New Project
 
-<img src="NewJavaProject1.jpg" alt="New Java Project in Eclipse" width="500" align="middle">
+<img src="NewJavaProject1.jpg" alt="New Java Project in Eclipse" align="middle">
 
 Choose Java Project, and call the project WordCount
 
