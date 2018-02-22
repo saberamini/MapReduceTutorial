@@ -225,7 +225,7 @@ hadoop_data       Videos
 
 We will now take all the class files that were produced and package them into a jar file.
 
-> cf WordCount.jar WordCount*.class
+> jar cf WordCount.jar WordCount*.class
 
 If you type "ls" again, you should see a file called WordCount.jar (it should be in red)
 
