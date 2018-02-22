@@ -225,17 +225,13 @@ We will now take all the class files that were produced and package them into a 
 
 If you type "ls" again, you should see a file called WordCount.jar (it should be in red)
 
-We will now run the code on our file system
-
-To run our code, we need to do some setup of directories.  First make a folder called input
+Make an input directory for our job.
 
 > hdfs dfs -mkdir /input
 
-And create a folder called output
+We now need a file to parse using MapReduce.  There is a file called alice.txt posted on the course website.  Download this file to your directory where you are running your commands (you can check the directory you are in by typing pwd or present working directory).
 
-> hdfs dfs -mkdir /input
-
-We now need a file to parse using MapReduce.  There is a file called alice.txt posted on the course website.  Download this file to your directory. 
+Now take this file and copy it to your HDFS.
 
 > hdfs dfs -copyFromLocal: alice.txt /input/alice.txt
 
@@ -245,4 +241,10 @@ Display the results to make sure the save occured correctly:
 
 Now run the job
 
-> hadoop jar WordCount.jar WordCount /input/... /output
+> hadoop jar WordCount.jar WordCount /input /output
+
+Look at the log of the output to make sure there is no errors.
+
+Now take a look at what you have got.
+
+> hadoop hdfs -cat /output/part-r-00000
