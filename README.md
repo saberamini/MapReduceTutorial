@@ -237,7 +237,7 @@ We now need a file to parse using MapReduce.  There is a file called alice.txt p
 
 Now take this file and copy it to your HDFS.
 
-> hdfs dfs -copyFromLocal: alice.txt /input/alice.txt
+> hdfs dfs -copyFromLocal alice.txt /input/alice.txt
 
 Display the results to make sure the save occured correctly:
 
