@@ -102,7 +102,12 @@ YOu should have already downloaded Hadoop 2.9 version for installing the Hadoop 
 /usr/local/hadoop/share/hadoop/common
 ```
 
-But since we are installing Eclipse on the windows platform, we cannot "see" these files.  Easy solution is simply to email yourselt the files you need or just download from the course website.
+But since we are installing Eclipse on the windows/mac platform, we cannot "see" these files.  One way is to access the files is to create a shared folder for your virtual machine and native OS. Easier solution is to download the file from the course website.
 
+We now need to add the MapReduce core library, it is located in
 
+```
+/usr/local/hadoop/share/hadoop/common
+```
 
+You can access it from this folder, or download it from the course website.
