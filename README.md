@@ -72,11 +72,9 @@ Now we need to compile this could and at a minimum we require a compiler.  But g
 
 In Java, the most commonly used is the Eclipse IDE.  We would like to download the IDE, go to http://www.eclipse.org/downloads/packages/
 
-There are many choices here - it seems confusing but in reality it is just a an alphabetical list.  I found it funny that a developers <a href="https://kichwacoders.com/2016/04/28/why-its-time-to-kill-the-eclipse-release-namesneon-oxygen-etc/">bemoans</a> all the different choices, but it's not surprising too many choices can lead to <a href="https://www.youtube.com/watch?v=VO6XEQIsCoM">paralysis</a>.  The latest version is Photon, so click on Photon and then choose 
+There are many choices here - it seems confusing but in reality it is just a an alphabetical list.  I found it funny that a developers <a href="https://kichwacoders.com/2016/04/28/why-its-time-to-kill-the-eclipse-release-namesneon-oxygen-etc/">bemoans</a> all the different choices, but it's not surprising too many choices can lead to <a href="https://www.youtube.com/watch?v=VO6XEQIsCoM">paralysis</a>.  Choose the Oxygen version (Photon is a bit underdeveloped at this point) as shown below: 
 
 <img src="EclipseDownload.jpg" alt="Choosing the latest version of Eclipse">
-
-Interestingly, all the different names have confused people which reminds of the paradox of choice.
 
 Open Eclipse
 
