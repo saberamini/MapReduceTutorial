@@ -198,4 +198,51 @@ Save this file (we will use it in a future tutorial).
 
 ## Running a MapReduce job on your single node cluster
 
-Boot up your virtual machine with a single node cluster
+Boot up your virtual machine with a single node cluster and log in as hduser.
+
+We need to first set up another environment variable:
+
+> export HADOOP_CLASSPATH=$JAVA_HOME/lib/tools.jar
+
+Then type:
+
+> hadoop com.sun.tools.javac.Main WordCounter.java
+
+This will create several class files.  You can see these by typing "ls" and seeing the files created:
+
+```
+hduser@HadoopNode:~$ ls
+Desktop           Music      WordCount.class
+Documents         Pictures   WordCount$IntSumReducer.class
+Downloads         Public     WordCount.java
+examples.desktop  Templates  WordCount$TokenizerMapper.class
+hadoop_data       Videos
+```
+
+We will now take all the class files that were produced and package them into a jar file.
+
+> cf WordCount.jar WordCount*.class
+
+If you type "ls" again, you should see a file called WordCount.jar (it should be in red)
+
+We will now run the code on our file system
+
+To run our code, we need to do some setup of directories.  First make a folder called input
+
+> hdfs dfs -mkdir /input
+
+And create a folder called output
+
+> hdfs dfs -mkdir /input
+
+We now need a file to parse using MapReduce.  There is a file called alice.txt posted on the course website.  Download this file to your directory. 
+
+> hdfs dfs -copyFromLocal: alice.txt /input/alice.txt
+
+Display the results to make sure the save occured correctly:
+
+> hdfs dfs -ls /input
+
+Now run the job
+
+> hadoop jar WordCount.jar WordCount /input/... /output
