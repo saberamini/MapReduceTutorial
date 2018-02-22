@@ -111,3 +111,7 @@ We now need to add the MapReduce core library, it is located in
 ```
 
 You can access it from this folder, or download it from the course website.
+
+Click the Finish botton.
+
+<img src="NewJavaProject2.jpg" alt="New Java Project in Eclipse" width="400" align="middle">
