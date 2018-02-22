@@ -193,3 +193,9 @@ public class WordCount {
 Paste the entire above code in WordCount.java
 
 <img src="NewJavaProject5.jpg" alt="New Java Project in Eclipse" width="400" align="middle">
+
+Save this file (we will use it in a future tutorial).
+
+## Running a MapReduce job on your single node cluster
+
+Boot up your virtual machine with a single node cluster
