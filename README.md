@@ -94,7 +94,7 @@ We now need to add the hadoop libraries.
 
 <img src="AddingHadoopLibraries.jpg" alt="Adding Hadoop Libraries" width = "400" align="middle">
 
-YOu should have already downloaded Hadoop 2.9 version for installing the Hadoop cluster on a single node.  The files were untarred (equivalent to unzipped) in the following folder on your virtual machine
+You should have already downloaded Hadoop 2.9 version for installing the Hadoop cluster on a single node.  The files were untarred (equivalent to unzipped) in the following folder on your virtual machine
 
 ```
 /usr/local/hadoop/share/hadoop/common
@@ -232,6 +232,8 @@ If you type "ls" again, you should see a file called WordCount.jar (it should be
 Make an input directory for our job.
 
 > hdfs dfs -mkdir /input
+
+If you get an error, try starting your HDFS as discussed in the Working with Hadoop Tutorial.
 
 We now need a file to parse using MapReduce.  There is a file called alice.txt posted on the course website.  Download this file to your directory where you are running your commands (you can check the directory you are in by typing pwd or present working directory).
 
