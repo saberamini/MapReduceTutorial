@@ -198,11 +198,17 @@ Save this file (we will use it in a future tutorial).
 
 Boot up your virtual machine with a single node cluster and log in as hduser.
 
-We need to first set up another environment variable:
+We need to first set up another environment variable
 
 > export HADOOP_CLASSPATH=$JAVA_HOME/lib/tools.jar
 
-Then type:
+Next, we need to save our code to a file:
+
+> gedit WordCounter.java
+
+On the text editor that opens, copy and paste the code that is shown above.
+
+At the console, now compile your code:
 
 > hadoop com.sun.tools.javac.Main WordCounter.java
 
