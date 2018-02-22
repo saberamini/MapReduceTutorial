@@ -115,3 +115,11 @@ You can access it from this folder, or download it from the course website.
 Click the Finish botton.
 
 <img src="NewJavaProject2.jpg" alt="New Java Project in Eclipse" width="400" align="middle">
+
+In the Project development environment, right click on src --> New --> Class
+
+<img src="NewJavaProject3.jpg" alt="New Java Project in Eclipse" width="400" align="middle">
+
+
+
+
