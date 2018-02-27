@@ -268,3 +268,7 @@ Now take a look at what you have got.
 > yarn application -kill $ApplicationId
 
 > sudo rm -r /home/hduser/hadoop_data/hdfs/datanode/current/
+
+> $HADOOP_HOME/sbin/mr-jobhistory-daemon.sh stop historyserver
+
+> $HADOOP_HOME/sbin/mr-jobhistory-daemon.sh start historyserver
