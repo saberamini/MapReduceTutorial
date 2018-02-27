@@ -245,6 +245,12 @@ Display the results to make sure the save occured correctly:
 
 > hdfs dfs -ls /input
 
+Should something similar to :
+```
+Found 1 items
+-rw-r--r--   1 hduser supergroup         42 2018-02-17 17:08 /input/alice.xt
+'''
+
 Now run the job
 
 > hadoop jar WordCount.jar WordCount /input /output
