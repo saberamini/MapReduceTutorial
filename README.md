@@ -260,3 +260,5 @@ Now take a look at what you have got.
 > yarn application -list
 
 > yarn application -kill $ApplicationId
+
+> sudo rm -r /home/hduser/hadoop_data/hdfs/datanode/current/
