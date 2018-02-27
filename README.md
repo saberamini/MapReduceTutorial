@@ -254,3 +254,9 @@ Look at the log of the output to make sure there is no errors.
 Now take a look at what you have got.
 
 > hadoop hdfs -cat /output/part-r-00000
+
+## Debugging Issues
+
+> yarn application -list
+
+> yarn application -kill $ApplicationId
