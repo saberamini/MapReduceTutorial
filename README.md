@@ -256,6 +256,96 @@ Now run the job
 > hadoop jar WordCount.jar WordCount /input /output
 
 Look at the log of the output to make sure there is no errors.  You should see something like the following:
+```
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
+hduser@HadoopNode:~$ hadoop jar WordCount.jar WordCount /input /output2
+18/02/27 21:27:01 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+18/02/27 21:27:03 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+18/02/27 21:27:03 INFO input.FileInputFormat: Total input files to process : 1
+18/02/27 21:27:03 WARN hdfs.DataStreamer: Caught exception
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1245)
+	at java.lang.Thread.join(Thread.java:1319)
+	at org.apache.hadoop.hdfs.DataStreamer.closeResponder(DataStreamer.java:980)
+	at org.apache.hadoop.hdfs.DataStreamer.endBlock(DataStreamer.java:630)
+	at org.apache.hadoop.hdfs.DataStreamer.run(DataStreamer.java:807)
+18/02/27 21:27:03 WARN hdfs.DataStreamer: Caught exception
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1245)
+	at java.lang.Thread.join(Thread.java:1319)
+	at org.apache.hadoop.hdfs.DataStreamer.closeResponder(DataStreamer.java:980)
+	at org.apache.hadoop.hdfs.DataStreamer.endBlock(DataStreamer.java:630)
+	at org.apache.hadoop.hdfs.DataStreamer.run(DataStreamer.java:807)
+18/02/27 21:27:03 INFO mapreduce.JobSubmitter: number of splits:1
+18/02/27 21:27:04 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+18/02/27 21:27:04 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1519781659193_0002
+18/02/27 21:27:05 INFO impl.YarnClientImpl: Submitted application application_1519781659193_0002
+18/02/27 21:27:05 INFO mapreduce.Job: The url to track the job: http://HadoopNode:8088/proxy/application_1519781659193_0002/
+18/02/27 21:27:05 INFO mapreduce.Job: Running job: job_1519781659193_0002
+18/02/27 21:27:23 INFO mapreduce.Job: Job job_1519781659193_0002 running in uber mode : false
+18/02/27 21:27:23 INFO mapreduce.Job:  map 0% reduce 0%
+18/02/27 21:27:34 INFO mapreduce.Job:  map 100% reduce 0%
+18/02/27 21:27:45 INFO mapreduce.Job:  map 100% reduce 100%
+18/02/27 21:27:46 INFO mapreduce.Job: Job job_1519781659193_0002 completed successfully
+18/02/27 21:27:46 INFO mapreduce.Job: Counters: 49
+	File System Counters
+		FILE: Number of bytes read=49
+		FILE: Number of bytes written=403061
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=143
+		HDFS: Number of bytes written=27
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=8372
+		Total time spent by all reduces in occupied slots (ms)=8024
+		Total time spent by all map tasks (ms)=8372
+		Total time spent by all reduce tasks (ms)=8024
+		Total vcore-milliseconds taken by all map tasks=8372
+		Total vcore-milliseconds taken by all reduce tasks=8024
+		Total megabyte-milliseconds taken by all map tasks=8572928
+		Total megabyte-milliseconds taken by all reduce tasks=8216576
+	Map-Reduce Framework
+		Map input records=8
+		Map output records=8
+		Map output bytes=72
+		Map output materialized bytes=49
+		Input split bytes=101
+		Combine input records=8
+		Combine output records=4
+		Reduce input groups=4
+		Reduce shuffle bytes=49
+		Reduce input records=4
+		Reduce output records=4
+		Spilled Records=8
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=459
+		CPU time spent (ms)=1820
+		Physical memory (bytes) snapshot=361787392
+		Virtual memory (bytes) snapshot=3902402560
+		Total committed heap usage (bytes)=170004480
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=42
+	File Output Format Counters 
+		Bytes Written=27
+```
 
 Open a webbroswer and type the following address:
 
