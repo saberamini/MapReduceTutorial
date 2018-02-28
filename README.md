@@ -439,7 +439,7 @@ If we click on the number 1 under "Unhealthy Nodes", we get the following report
 
 <img src="unhealthyNode2.jpg" alt="Unhealthy Node" align="middle">
 
-This shows that the temporary file folder for some reason cannot be accessed.  This folder was specified in the <b>core-site.xml</b> configuration file.  All Hadoop and MapReduce parameters have default values unless we specifically override these defaults with the configuration files.  In this case, we can simply open core-site.xml and comment out the temporary folder and allow the system to use it's default folder for temporary files:
+This shows that the temporary file folder for some reason cannot be accessed.  This folder was specified in the <b>core-site.xml</b> configuration file.  All Hadoop and MapReduce parameters have default values unless we specifically override these defaults with the parameters specified in the configuration files.  In this case, we can simply open core-site.xml and comment out the temporary folder and allow the system to use its default folder to store the temporary files:
 
 ```
 <!-- 
@@ -457,7 +457,7 @@ This shows that the temporary file folder for some reason cannot be accessed.  T
 </configuration>
 ```
 
-Note that <!-- --> is a block comment in xml.
+Note that ```<!-- -->``` is a block comment in xml.
 
 You can always check the jobs you have running by using the following command:
 
