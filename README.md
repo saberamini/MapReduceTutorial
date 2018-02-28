@@ -263,11 +263,11 @@ Open a webbroswer and type the following address:
 
 This is where you can take a look at the jobs in your cluster.  You should see a list of your jobs and whether they were successful or not.
 
-<img src="NameNode_Output.jpg" alt="Cluster jobs" width="400" align="middle">
+<img src="NameNode_Output.jpg" alt="Cluster jobs" align="middle">
 
 You can also look at your HDFS file system.  Go to http://localhost:50070 and click on Utilities-> Brows the file system.  You should see an output folder created.
 
-<img src="HDFS_Success.jpg" alt="HDFS showing output job" width="400" align="middle">
+<img src="HDFS_Success.jpg" alt="HDFS showing output job" align="middle">
 
 
 Now take a look at what you have got.
