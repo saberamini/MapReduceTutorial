@@ -350,6 +350,86 @@ Now take a look at what you have got.
 
 > hadoop fs -cat /output/part-r-00000
 
+You should see a list of words and the number of occurences.  For the text file provided to you, the <i>beginning</i> of the output should look like this:
+
+```
+"'	1
+"'TIS	1
+"'Tis	1
+"--SAID	1
+"Come	1
+"Coming	1
+"Edwin	1
+"French,	1
+"HOW	1
+"He's	1
+"How	1
+"I	8
+"I'll	2
+"Keep	1
+"Let	1
+"Such	1
+"THEY	1
+"There	2
+"There's	1
+"Too	1
+"Turtle	1
+"Twinkle,	1
+"Uglification,"	1
+"Up	1
+"What	2
+"Who	1
+"William	1
+"With	1
+"YOU	1
+"You	2
+"come	1
+"it"	2
+"much	1
+"poison"	1
+"purpose"?'	1
+'em	3
+'tis	2
+(Alice	4
+(And,	1
+(As	1
+(Before	1
+(Dinah	1
+(For,	1
+(He	1
+(I	1
+(IF	1
+(In	1
+(It	1
+(Sounds	1
+(The	3
+(WITH	1
+(We	1
+(Which	2
+(`I	1
+(`That's	1
+(`the	1
+(`which	1
+(a	1
+(and	1
+(as	2
+(for	1
+(for,	1
+(it	4
+(look	1
+(luckily	1
+(not	1
+(or	1
+(pointing	1
+(she	9
+(the	1
+(though	1
+(when	1
+(which	1
+(with	1
+*	60
+```
+
 ## Debugging Issues
 
 > yarn application -list
