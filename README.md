@@ -112,15 +112,15 @@ You can access it from this folder, or download it from the course website.
 
 Click the Finish botton.
 
-<img src="NewJavaProject2.jpg" alt="New Java Project in Eclipse" width="500" align="middle">
+<img src="NewJavaProject2.jpg" alt="New Java Project in Eclipse" align="middle">
 
 In the Project development environment, right click on src --> New --> Class
 
-<img src="NewJavaProject3.jpg" alt="New Java Project in Eclipse" width="500" align="middle">
+<img src="NewJavaProject3.jpg" alt="New Java Project in Eclipse" align="middle">
 
 Call the new class "WordCount" and click finish.
 
-<img src="NewJavaProject4.jpg" alt="New Java Project in Eclipse" width="500" align="middle">
+<img src="NewJavaProject4.jpg" alt="New Java Project in Eclipse" align="middle">
 
 Now copy the mapper and reducer functions as written in Java:
 
