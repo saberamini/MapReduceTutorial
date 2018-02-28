@@ -431,18 +431,89 @@ You should see a list of words and the number of occurences.  For the text file 
 ```
 
 ## Debugging Issues
+If your jobs do not finish, this maybe do to a variety of issues.  You need to look at the job status in http://localhost:8088 and try to decipher what the issue is.  You should always check that all your nodes (in this case just one) are "healthy".  If there is any unhealthy nodes, you must click on the number to see what the issue is.  Here is an example of a job that does not complete because of an unhealthy node.
+
+<img src="unhealthyNode.jpg" alt="Unhealthy Node" align="middle">
+
+If we click on the number 1 under "Unhealthy Nodes", we get the following report.
+
+<img src="unhealthyNode2.jpg" alt="Unhealthy Node" align="middle">
+
+This shows that the temporary file folder for some reason cannot be accessed.  This folder was specified in the <b>core-site.xml</b> configuration file.  All Hadoop and MapReduce parameters have default values unless we specifically override these defaults with the configuration files.  In this case, we can simply open core-site.xml and comment out the temporary folder and allow the system to use it's default folder for temporary files:
+
+```
+<!-- 
+ <property>  
+    <name>hadoop.tmp.dir</name>
+    <value>/home/tmp</value>
+    <description> A base for other temporary directories. </description>
+  </property>
+-->
+  <property>  
+    <name>fs.defaultFS</name>
+    <value>hdfs://localhost:9000</value>
+    <description> localhost may be replaced with a DNS that points to the NameNode. </description>
+  </property>
+</configuration>
+```
+
+Note that <!-- --> is a block comment in xml.
+
+You can always check the jobs you have running by using the following command:
 
 > yarn application -list
 
+Here is an output if you have a job (that is hanging due to the issue above)
+
+```
+18/02/27 22:51:42 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+Total number of applications (application-types: [], states: [SUBMITTED, ACCEPTED, RUNNING] and tags: []):1
+                Application-Id	    Application-Name	    Application-Type	      User	     Queue	             State	       Final-State	       Progress                       Tracking-URL
+application_1519789340795_0001	          word count	           MAPREDUCE	    hduser	   default	          ACCEPTED	         UNDEFINED	             0%                                N/A
+```
+
+If you like to kill some jobs, you can use the command
+
 > yarn application -kill $ApplicationId
 
+where $ApplicationId is the ID, in the above case it is application_1519789340795_0001 (yes it's long).
+
+You should always run a jps command to make sure you have both YARN and HDFS running:
+
+> jps
+
+The output should have five (5) processes:
+
+```
+12434 ResourceManager
+27187 NameNode
+12741 NodeManager
+13003 Jps
+27310 DataNode
+```
+
+If you do not have a DataNode, follow the instructions <a href="https://stackoverflow.com/questions/29166837/datanode-is-not-starting-in-singlenode-hadoop-2-6-0"> here </a>
+
 > sudo rm -r /home/hduser/hadoop_data/hdfs/datanode/current/
+
+If you want to stop HDFS and YARN (respectively):
+
+> stop-hdfs.sh
+> stop-yarn.sh
+
+If you want to start YARN, HDFS again:
+
+> start-hdfs.sh
+> start-yarn.sh
+
+
+If you want to start or stop the history daemon:
 
 > $HADOOP_HOME/sbin/mr-jobhistory-daemon.sh stop historyserver
 
 > $HADOOP_HOME/sbin/mr-jobhistory-daemon.sh start historyserver
 
-To remove the output directory
+Each job has to run in a separate directory (you get an error otherwise).  To remove the output directory (so it can be used again for another job) use the command:
 
 > hdfs dfs -rm -r /output
 
