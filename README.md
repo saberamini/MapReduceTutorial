@@ -257,6 +257,18 @@ Now run the job
 
 Look at the log of the output to make sure there is no errors.  You should see something like the following:
 
+Open a webbroswer and type the following address:
+
+> http://localhost:8088
+
+This is where you can take a look at the jobs in your cluster.  You should see a list of your jobs and whether they were successful or not.
+
+<img src="NameNodeOutput.jpg" alt="Cluster jobs" width="400" align="middle">
+
+You can also look at your HDFS file system.  Go to http://localhost:50070 and click on Utilities-> Brows the file system.  You should see an output folder created.
+
+<img src="HDFSS_Success.jpg" alt="HDFS showing output job" width="400" align="middle">
+
 
 Now take a look at what you have got.
 
