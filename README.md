@@ -292,3 +292,15 @@ Now take a look at what you have got.
 To remove the output directory
 
 > hdfs dfs -rm -r /output
+
+If you get an exception error as follows, do not worry about it.  This is a bug in MapReduce
+
+```
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1245)
+	at java.lang.Thread.join(Thread.java:1319)
+	at org.apache.hadoop.hdfs.DataStreamer.closeResponder(DataStreamer.java:980)
+	at org.apache.hadoop.hdfs.DataStreamer.endBlock(DataStreamer.java:630)
+	at org.apache.hadoop.hdfs.DataStreamer.run(DataStreamer.java:807)
+```
