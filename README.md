@@ -492,20 +492,21 @@ The output should have five (5) processes:
 27310 DataNode
 ```
 
-If you do not have a DataNode, follow the instructions <a href="https://stackoverflow.com/questions/29166837/datanode-is-not-starting-in-singlenode-hadoop-2-6-0"> here </a>
+If you do not have a DataNode, follow the instructions <a href="https://stackoverflow.com/questions/29166837/datanode-is-not-starting-in-singlenode-hadoop-2-6-0"> here </a> or stop the HDFS, YARN and use command:
 
 > sudo rm -r /home/hduser/hadoop_data/hdfs/datanode/current/
 
 If you want to stop HDFS and YARN (respectively):
 
 > stop-hdfs.sh
+
 > stop-yarn.sh
 
 If you want to start YARN, HDFS again:
 
 > start-hdfs.sh
-> start-yarn.sh
 
+> start-yarn.sh
 
 If you want to start or stop the history daemon:
 
