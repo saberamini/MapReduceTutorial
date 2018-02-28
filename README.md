@@ -257,27 +257,10 @@ Now run the job
 
 Look at the log of the output to make sure there is no errors.  You should see something like the following:
 ```
-	at org.apache.hadoop.util.RunJar.main(RunJar.java:153)
 hduser@HadoopNode:~$ hadoop jar WordCount.jar WordCount /input /output2
 18/02/27 21:27:01 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
 18/02/27 21:27:03 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
 18/02/27 21:27:03 INFO input.FileInputFormat: Total input files to process : 1
-18/02/27 21:27:03 WARN hdfs.DataStreamer: Caught exception
-java.lang.InterruptedException
-	at java.lang.Object.wait(Native Method)
-	at java.lang.Thread.join(Thread.java:1245)
-	at java.lang.Thread.join(Thread.java:1319)
-	at org.apache.hadoop.hdfs.DataStreamer.closeResponder(DataStreamer.java:980)
-	at org.apache.hadoop.hdfs.DataStreamer.endBlock(DataStreamer.java:630)
-	at org.apache.hadoop.hdfs.DataStreamer.run(DataStreamer.java:807)
-18/02/27 21:27:03 WARN hdfs.DataStreamer: Caught exception
-java.lang.InterruptedException
-	at java.lang.Object.wait(Native Method)
-	at java.lang.Thread.join(Thread.java:1245)
-	at java.lang.Thread.join(Thread.java:1319)
-	at org.apache.hadoop.hdfs.DataStreamer.closeResponder(DataStreamer.java:980)
-	at org.apache.hadoop.hdfs.DataStreamer.endBlock(DataStreamer.java:630)
-	at org.apache.hadoop.hdfs.DataStreamer.run(DataStreamer.java:807)
 18/02/27 21:27:03 INFO mapreduce.JobSubmitter: number of splits:1
 18/02/27 21:27:04 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
 18/02/27 21:27:04 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1519781659193_0002
