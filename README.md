@@ -269,6 +269,9 @@ You can also look at your HDFS file system.  Go to http://localhost:50070 and cl
 
 <img src="HDFS_Success.jpg" alt="HDFS showing output job" align="middle">
 
+If you click on the output folder, you will see a file called SUCESS and another file which is our output (that we will look at next).
+
+<img src="HDFS_Success2.jpg" alt="HDFS showing output job" align="middle">
 
 Now take a look at what you have got.
 
