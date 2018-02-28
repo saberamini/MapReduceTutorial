@@ -272,3 +272,7 @@ Now take a look at what you have got.
 > $HADOOP_HOME/sbin/mr-jobhistory-daemon.sh stop historyserver
 
 > $HADOOP_HOME/sbin/mr-jobhistory-daemon.sh start historyserver
+
+To remove the output directory
+
+> hdfs dfs -rm -r /output
