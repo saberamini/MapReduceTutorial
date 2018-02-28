@@ -293,7 +293,7 @@ To remove the output directory
 
 > hdfs dfs -rm -r /output
 
-If you get an exception error as follows, do not worry about it.  This is a bug in MapReduce
+If you get an exception error as follows, do not worry about it.  This is a <a href="https://stackoverflow.com/questions/39351690/got-interruptedexception-while-executing-word-count-mapreduce-job">bug</a> in MapReduce.
 
 ```
 java.lang.InterruptedException
@@ -304,3 +304,4 @@ java.lang.InterruptedException
 	at org.apache.hadoop.hdfs.DataStreamer.endBlock(DataStreamer.java:630)
 	at org.apache.hadoop.hdfs.DataStreamer.run(DataStreamer.java:807)
 ```
+
