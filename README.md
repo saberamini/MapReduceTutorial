@@ -518,6 +518,8 @@ Each job has to run in a separate directory (you get an error otherwise).  To re
 
 > hdfs dfs -rm -r /output
 
+Otherwise you need to use different names for the output directory everytime you run a MapReduce job (for example output2, output3 etc)
+
 If you get an exception error as follows, do not worry about it.  This is a <a href="https://stackoverflow.com/questions/39351690/got-interruptedexception-while-executing-word-count-mapreduce-job">bug</a> in MapReduce.
 
 ```
