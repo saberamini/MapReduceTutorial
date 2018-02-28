@@ -255,11 +255,12 @@ Now run the job
 
 > hadoop jar WordCount.jar WordCount /input /output
 
-Look at the log of the output to make sure there is no errors.
+Look at the log of the output to make sure there is no errors.  You should see something like the following:
+
 
 Now take a look at what you have got.
 
-> hadoop hdfs -cat /output/part-r-00000
+> hadoop fs -cat /output/part-r-00000
 
 ## Debugging Issues
 
