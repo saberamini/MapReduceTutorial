@@ -190,7 +190,7 @@ public class WordCount {
 
 Paste the entire above code in WordCount.java
 
-<img src="NewJavaProject5.jpg" alt="New Java Project in Eclipse" width="400" align="middle">
+<img src="NewJavaProject5.jpg" alt="New Java Project in Eclipse" align="middle">
 
 Save this file (we will use it in a future tutorial).
 
