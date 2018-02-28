@@ -257,7 +257,7 @@ Now run the job
 
 Look at the log of the output to make sure there is no errors.  You should see something like the following:
 ```
-hduser@HadoopNode:~$ hadoop jar WordCount.jar WordCount /input /output2
+hduser@HadoopNode:~$ hadoop jar WordCount.jar WordCount /input /output
 18/02/27 21:27:01 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
 18/02/27 21:27:03 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
 18/02/27 21:27:03 INFO input.FileInputFormat: Total input files to process : 1
