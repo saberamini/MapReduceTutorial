@@ -498,13 +498,13 @@ If you do not have a DataNode, follow the instructions <a href="https://stackove
 
 If you want to stop HDFS and YARN (respectively):
 
-> stop-hdfs.sh
+> stop-dfs.sh
 
 > stop-yarn.sh
 
 If you want to start YARN, HDFS again:
 
-> start-hdfs.sh
+> start-dfs.sh
 
 > start-yarn.sh
 
