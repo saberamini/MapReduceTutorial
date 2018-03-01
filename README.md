@@ -204,7 +204,7 @@ We need to first set up another environment variable
 
 Next, we need to save our code to a file:
 
-> gedit WordCounter.java
+> gedit WordCount.java
 
 On the text editor that opens, copy and paste the code that is shown above.
 
