@@ -210,7 +210,7 @@ On the text editor that opens, copy and paste the code that is shown above.
 
 At the console, now compile your code:
 
-> hadoop com.sun.tools.javac.Main WordCounter.java
+> hadoop com.sun.tools.javac.Main WordCount.java
 
 This will create several class files.  You can see these by typing "ls" and seeing the files created:
 
