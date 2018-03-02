@@ -255,6 +255,8 @@ Now run the job
 
 > hadoop jar WordCount.jar WordCount /input /output
 
+What we are doing here is running a MapReduce job where the input is in the directory called "input" (which you just created) and the result will be saved in the directory called output.  Remember output has to be a new folder (hadoop will give you an error if the output folder already exists).
+
 Look at the log of the output to make sure there is no errors.  You should see something like the following:
 ```
 hduser@HadoopNode:~$ hadoop jar WordCount.jar WordCount /input /output
@@ -346,7 +348,7 @@ If you click on the output folder, you will see a file called SUCESS and another
 
 <img src="HDFS_Success2.jpg" alt="HDFS showing output job" align="middle">
 
-Now take a look at what you have got.
+Now take a look at the output file that got.  Remmeber HDFS is not a "regular" file system, you cannot just click and see the results in your regular file system (or even on the administrator site).
 
 > hadoop fs -cat /output/part-r-00000
 
