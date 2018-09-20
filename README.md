@@ -68,7 +68,7 @@ public class WordCount {
 }
 ```
 
-Now we need to compile this could and at a minimum we require a compiler.  But given the complexity of this code, we need more support and will use a Integrated Development Environment or IDE.  For this particular tutorial we will not be modifying the default code but we will in the future so it's best we download an IDE.
+Now, we need to compile this code and at a minimum we require a compiler.  But given the complexity of this code, we need more support and will use a Integrated Development Environment or IDE.  For this particular tutorial we will not be modifying the default code but we will in the future so it's best we download an IDE.
 
 In Java, the most commonly used is the Eclipse IDE.  We would like to download the IDE, go to http://www.eclipse.org/downloads/packages/
 
