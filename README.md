@@ -196,6 +196,10 @@ Save this file (we will use it in a future tutorial).
 
 ## Running a MapReduce job on your single node cluster
 
+We need to first set up an environment variable
+
+> export HADOOP_CLASSPATH=$JAVA_HOME/lib/tools.jar
+
 Next, we need to save our code to a file:
 
 > gedit WordCount.java
