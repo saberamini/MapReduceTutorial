@@ -196,12 +196,6 @@ Save this file (we will use it in a future tutorial).
 
 ## Running a MapReduce job on your single node cluster
 
-Boot up your virtual machine with a single node cluster and log in as hduser.
-
-We need to first set up another environment variable
-
-> export HADOOP_CLASSPATH=$JAVA_HOME/lib/tools.jar
-
 Next, we need to save our code to a file:
 
 > gedit WordCount.java
